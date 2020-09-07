@@ -1,0 +1,26 @@
+<div>
+    <h1>Any to Any Comp Comn - Demo </h1>
+    <h2>My Profile</h2>
+    <p>Data coming from Account Data Service is : {{accountName}}</p>
+    <input type="text" [(ngModel)]="duplicateAccountName" class="form-control">
+    <button type="button" class="btn btn-primary"
+     (click)="updateAccountHandler()">Update Account Name</button>
+
+     <hr>
+     <h2>Pipes - Demo</h2>
+     <h2>{{today}}</h2>
+     <p>{{today | date}}</p>
+     <p>{{today | date: 'dd/MM/yyyy' }}</p>
+     <p>{{today | date: 'MMMM dd, yyyy hh:mm:ss a' }}</p>
+
+     <p>{{randomText}}</p>
+     <p>{{randomText |uppercase }}</p>
+
+     <h3>Custom Pipes</h3>
+    <pre></pre>
+
+    <p>{{randomText}}</p>
+    <p>{{randomText | ellipsis}}</p>
+    <p>{{randomText | ellipsis: '24'}}</p> <!--parametarized type-->
+
+</div>
